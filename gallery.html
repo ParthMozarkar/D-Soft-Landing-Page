@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | D'Soft Nagpur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 0;
+        }
+
+        .gallery-item {
+            height: 350px;
+            background: var(--white);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery-item:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+        }
+
+        .gallery-item span {
+            font-size: 1rem;
+            margin-top: 20px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body class="nexus-site">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html" style="color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <span class="logo-box">D'</span> SOFT
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about" class="n-link">About</a>
+                <a href="index.html#pathway" class="n-link">Pathway</a>
+                <a href="about.html" class="n-link">About Us</a>
+                <a href="index.html#webinar" class="nav-btn">Free Webinar</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 150px 0 50px;">
+        <div class="container">
+            <div class="hero-tag">Inside D'Soft</div>
+            <h1>Our <span class="accent">Gallery</span></h1>
+            <p class="hero-desc">Take a look at our classrooms, events, and the winning moments of our students.</p>
+        </div>
+    </header>
+
+    <section class="section-padding bg-alt">
+        <div class="container">
+            <div class="gallery-grid-main">
+                <div class="gallery-item">📸 <span>Classroom Moments</span></div>
+                <div class="gallery-item">🎓 <span>Convocation Day</span></div>
+                <div class="gallery-item">💻 <span>Hands-on Sessions</span></div>
+                <div class="gallery-item">🏆 <span>Award Ceremonies</span></div>
+                <div class="gallery-item">🤝 <span>Interactive Meetups</span></div>
+                <div class="gallery-item">🚀 <span>Project Showcase</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer section-padding bg-dark text-white">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="brand">
+                    <span class="logo-box">D'</span> SOFT
+                </div>
+                <p>Architecting Minds since 1998.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Located in Nagpur, Maharashtra</p>
+                <p>Phone: +91 XXXX XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D'Soft Computer Training Institute. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
